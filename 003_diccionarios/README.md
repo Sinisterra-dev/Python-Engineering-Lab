@@ -1,6 +1,6 @@
 # 003_diccionarios — Diccionarios
 
-Este módulo contiene **200 ejercicios** de diseño de problemas reales.
+Este módulo contiene **35 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **200 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #601 hasta #800
+- Desde #601 hasta #635

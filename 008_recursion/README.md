@@ -1,6 +1,6 @@
 # 008_recursion — Recursión
 
-Este módulo contiene **100 ejercicios** de diseño de problemas reales.
+Este módulo contiene **16 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **100 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #1261 hasta #1360
+- Desde #1261 hasta #1276

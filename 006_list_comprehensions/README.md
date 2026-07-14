@@ -1,6 +1,6 @@
 # 006_list_comprehensions — List comprehensions
 
-Este módulo contiene **60 ejercicios** de diseño de problemas reales.
+Este módulo contiene **16 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **60 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #1051 hasta #1110
+- Desde #1051 hasta #1066

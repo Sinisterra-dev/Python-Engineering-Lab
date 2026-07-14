@@ -1,6 +1,6 @@
 # 005_strings — Strings
 
-Este módulo contiene **150 ejercicios** de diseño de problemas reales.
+Este módulo contiene **26 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **150 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #901 hasta #1050
+- Desde #901 hasta #926

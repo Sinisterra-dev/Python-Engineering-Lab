@@ -1,6 +1,6 @@
 # 004_sets_y_tuplas — Sets y tuplas
 
-Este módulo contiene **100 ejercicios** de diseño de problemas reales.
+Este módulo contiene **22 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **100 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #801 hasta #900
+- Desde #801 hasta #822

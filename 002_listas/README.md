@@ -1,6 +1,6 @@
 # 002_listas — Listas
 
-Este módulo contiene **200 ejercicios** de diseño de problemas reales.
+Este módulo contiene **40 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **200 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #401 hasta #600
+- Desde #401 hasta #440

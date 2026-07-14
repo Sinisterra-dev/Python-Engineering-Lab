@@ -1,6 +1,6 @@
 # 007_funciones — Funciones
 
-Este módulo contiene **150 ejercicios** de diseño de problemas reales.
+Este módulo contiene **26 ejercicios** de diseño de problemas reales.
 
 ## Enfoque
 - Progresión por niveles del 1 al 6.
@@ -14,4 +14,4 @@ Este módulo contiene **150 ejercicios** de diseño de problemas reales.
 - `recursos.md`
 
 ## Rango global de ejercicios
-- Desde #1111 hasta #1260
+- Desde #1111 hasta #1136
