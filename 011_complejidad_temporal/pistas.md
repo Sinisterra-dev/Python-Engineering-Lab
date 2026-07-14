@@ -1,11 +1,6 @@
-# Pistas — Complejidad temporal
+# Pistas
 
-Estas pistas son opcionales y no contienen solución.
-
-1. Empieza separando validación, transformación y salida.
-2. Piensa qué estructura de datos reduce complejidad accidental.
-3. Define primero los invariantes que nunca deben romperse.
-4. Diseña ejemplos mínimos y ejemplos extremos antes de avanzar.
-5. Busca duplicidad de lógica y plantea cómo reutilizarla.
-
-Recomendación: intenta resolver al menos 20 minutos antes de leer pistas.
+1. Ejecuta el ejemplo del enunciado.
+2. Crea una segunda entrada distinta para confirmar que no hardcodeaste.
+3. Identifica que regla nueva diferencia este ejercicio de uno anterior.
+4. Divide problemas grandes en validacion, calculo y salida.

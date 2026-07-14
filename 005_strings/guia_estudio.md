@@ -1,23 +1,3 @@
-# Guía de estudio — Strings
+# Guia de estudio - 005_strings
 
-## ANTES DE HACER ESTOS EJERCICIOS DEBES SABER
-
-Antes de comenzar este módulo debes dominar:
-- parsing
-- normalización
-- tokenización
-- validación de formato
-- búsqueda de patrones
-
-Si no dominas alguno de estos conceptos, estudia primero los módulos previos relacionados.
-
-Módulos recomendados previos:
-- 002_listas, 003_diccionarios, 004_sets_y_tuplas
-
-## Dificultad progresiva
-- Nivel 1 — Fácil: 29 ejercicios (#1 al #29 dentro del módulo).
-- Nivel 2 — Fácil-intermedio: 26 ejercicios (#30 al #55 dentro del módulo).
-- Nivel 3 — Intermedio: 26 ejercicios (#56 al #81 dentro del módulo).
-- Nivel 4 — Intermedio-avanzado: 26 ejercicios (#82 al #107 dentro del módulo).
-- Nivel 5 — Avanzado: 22 ejercicios (#108 al #129 dentro del módulo).
-- Nivel 6 — Muy avanzado: 21 ejercicios (#130 al #150 dentro del módulo).
+Este modulo prioriza variedad y progresion sobre cantidad. La dificultad sube por nuevas reglas, estructuras de datos, combinacion de conceptos y salidas mas ricas.
