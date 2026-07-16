@@ -119,6 +119,13 @@ print(indice_encontrado)
 #- **Reglas:** Combina dos comparaciones.
 #- **Pista opcional:** Usa and.
 
+temperatura = 9
+if temperatura >= 2 and temperatura <= 8:
+    print(True)
+else:
+    print(False)
+
+
 ## Ejercicio #0008 (Modulo 001_fundamentos_y_logica - #008)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
 #- **Conceptos involucrados:** strings, contadores
@@ -128,6 +135,15 @@ print(indice_encontrado)
 #- **Salida esperada:** `2`
 #- **Reglas:** Revisa cada string.
 #- **Pista opcional:** startswith puede ayudar.
+
+codigos = ["A-1", "B-2", "A-3"]
+prefijo = "A"
+
+total = 0
+for elemento in codigos:
+    if elemento.startswith(prefijo):
+        total += 1
+print(total)
 
 ## Ejercicio #0009 (Modulo 001_fundamentos_y_logica - #009)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
