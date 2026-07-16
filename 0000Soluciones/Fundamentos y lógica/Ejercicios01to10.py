@@ -174,3 +174,11 @@ print(nueva_lista)
 #- **Salida esperada:** `40`
 #- **Reglas:** Inicializa con el primer puntaje.
 # **Pista opcional:** Actualiza cuando encuentres uno mayor.
+
+puntajes = [12, 40, 25, 39]
+maximo = 12
+
+for puntaje in puntajes:
+    if puntaje > maximo:
+        maximo = puntaje
+print(maximo)
