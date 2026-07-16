@@ -79,6 +79,14 @@ print(contador)
 #- **Reglas:** Usa while restando el costo hasta que no alcance.
 #- **Pista opcional:** Cuenta cada partida jugada.
 
+creditos = 17; 
+costo = 5
+partidas_acumuladas = 0
+while costo <= creditos:
+    creditos -= costo
+    partidas_acumuladas += 1
+print(partidas_acumuladas)
+
 
 ## Ejercicio #0006 (Modulo 001_fundamentos_y_logica - #006)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
