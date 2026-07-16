@@ -155,6 +155,16 @@ print(total)
 #- **Reglas:** Construye una lista nueva.
 #- **Pista opcional:** Agrega solo los que cumplen.
 
+importes = [80, 120, 40, 200]
+minimo = 100
+
+nueva_lista = []
+for importe in importes:
+    if importe > minimo:
+        nueva_lista.append(importe)
+
+print(nueva_lista)
+
 ## Ejercicio #0010 (Modulo 001_fundamentos_y_logica - #010)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
 #- **Conceptos involucrados:** maximos
