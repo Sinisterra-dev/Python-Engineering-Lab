@@ -98,6 +98,17 @@ print(partidas_acumuladas)
 #- **Reglas:** Deten la busqueda al encontrar el primer libre.
 #- **Pista opcional:** Guarda el indice encontrado.
 
+turnos = ["ocupado", "ocupado", "libre"]
+indice_encontrado = -1
+
+for i in range(len(turnos)):
+    if turnos[i] == "libre":
+        indice_encontrado = i
+        break
+
+print(indice_encontrado)
+
+
 ## Ejercicio #0007 (Modulo 001_fundamentos_y_logica - #007)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
 #- **Conceptos involucrados:** validaciones simples
