@@ -121,6 +121,21 @@ print(temperaturas)
 #- **Reglas:** Recorre por indice.
 #- **Pista opcional:** Ambas listas comparten posicion.
 
+estados = ["ok", "bloqueado", "bloqueado"]
+intentos = [1, 2, 5]
+
+
+indice_primer_bloqueado = -1
+
+for i in range(len(estados)):
+   
+    if estados[i] == "bloqueado" and intentos[i] > 3:
+        indice_primer_bloqueado = i
+        break
+        
+
+print(f"Resultado {indice_primer_bloqueado}")
+
 ## Ejercicio #0016 (Modulo 001_fundamentos_y_logica - #016)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
 #- **Conceptos involucrados:** duplicados
@@ -131,6 +146,16 @@ print(temperaturas)
 #- **Reglas:** No uses una salida desordenada.
 #- **Pista opcional:** Agrega si todavia no esta.
 
+codigos = [7, 3, 7, 9, 3, 2]
+codigos_ordenados = []
+
+for codigo in codigos:
+    if codigo not in codigos_ordenados:
+        codigos_ordenados.append(codigo)
+    
+print(codigos_ordenados)
+
+
 ## Ejercicio #0017 (Modulo 001_fundamentos_y_logica - #017)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
 #- **Conceptos involucrados:** ranking
@@ -140,6 +165,19 @@ print(temperaturas)
 #- **Salida esperada:** `["cafe", "pan", "te"]`
 #- **Reglas:** Conserva la relacion producto-venta.
 #- **Pista opcional:** Ordena pares por venta descendente.
+
+productos = ["pan", "leche", "cafe", "te"]; ventas = [30, 12, 45, 20]
+pares = list(zip(productos, ventas))
+print(pares)
+parejas_ordenadas = sorted(pares,key=lambda x: x[1], reverse=True)
+top_3_parejas = parejas_ordenadas[:3]
+resultado = []
+for prod, vta in top_3_parejas:
+    resultado.append(prod)
+print(resultado)
+    
+
+
 
 ## Ejercicio #0018 (Modulo 001_fundamentos_y_logica - #018)
 #- **Nivel de dificultad:** Nivel 1 - Inicial
