@@ -189,6 +189,26 @@ print(resultado)
 #- **Reglas:** Si no hay entregas, devuelve 0.
 #- **Pista opcional:** tardias * 100 / total.
 
+retrasos = [0, 5, 0, 12, 3]
+
+tardias = 0
+
+for retraso in retrasos:
+    if retraso > 0:
+        tardias += 1
+
+total = len(retrasos)
+
+if total == 0:
+    porcentaje = 0
+else:
+    porcentaje = tardias * 100 / total
+
+print(porcentaje)
+    
+
+
+
 ## Ejercicio #0019 (Modulo 001_fundamentos_y_logica - #019)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** agregacion simple
@@ -199,6 +219,33 @@ print(resultado)
 #- **Reglas:** Usa listas auxiliares.
 #- **Pista opcional:** Busca si la categoria ya existe.
 
+categorias = ["A", "B", "A"]; montos = [10, 5, 7]
+
+categoria_unica = []
+monto_total = []
+
+for i in range(len(categorias)):
+    categoria_actual = categorias[i]
+    monto_actual = montos[i]
+
+    if categoria_actual in categoria_unica:
+        posicion = categoria_unica.index(categoria_actual)
+        monto_total[posicion] += monto_actual
+
+        
+    else:
+        categoria_unica.append(categoria_actual)
+        monto_total.append(monto_actual)
+
+resultado = {
+    "categorias": categoria_unica,
+    "totales": monto_total
+}
+
+print(resultado)
+
+
+
 ## Ejercicio #0020 (Modulo 001_fundamentos_y_logica - #020)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** validaciones encadenadas
@@ -208,6 +255,18 @@ print(resultado)
 #- **Salida esperada:** `True`
 #- **Reglas:** Nombre no vacio, precio > 0, stock >= 0 y categoria no vacia.
 #- **Pista opcional:** Combina condiciones.
+
+nombre = "Mouse"; 
+precio = 25; 
+stock = 4; 
+categoria = "tec"
+
+if nombre and precio > 0 and stock >= 0 and categoria:
+    print(True)
+else:
+    print(False)
+
+
 
 ## Ejercicio #0021 (Modulo 001_fundamentos_y_logica - #021)
 #- **Nivel de dificultad:** Nivel 2 - Basico
