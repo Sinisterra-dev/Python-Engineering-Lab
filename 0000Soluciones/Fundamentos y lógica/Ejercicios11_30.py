@@ -278,6 +278,63 @@ else:
 #- **Reglas:** Compara cada valor con su limite y suma solo deficits positivos.
 #- **Pista opcional:** El deficit es limite - valor.
 
+nombres = ["A", "B", "C"]; valores = [4, 7, 5]; limites = [7, 8, 6]
+
+critico = []
+deficit = 0
+
+for i in range(len(nombres)):
+    if valores[i] < limites[i]:
+        critico.append(nombres[i])
+        deficit += limites [i] - valores[i] 
+
+resultado = {
+    "criticos": critico,
+    "deficit": deficit
+}
+print(resultado)
+
+nombres = ["A", "B", "C"]
+valores = [4, 7, 5]
+limites = [7, 8, 6]
+
+criticos = []
+deficit_total = 0
+
+for nombre, valor, limite in zip(nombres, valores, limites):
+    if valor < limite:
+        criticos.append(nombre)
+        deficit_total += limite - valor
+
+resultado = {
+    "criticos": criticos,
+    "deficit_total": deficit_total
+}
+
+print(resultado)
+
+
+productos = ["Laptop", "Mouse", "Teclado", "Monitor"]
+stocks = [3, 0, 5, 0]
+minimos = [5, 2, 3, 4]
+
+reponer =[]
+uniudades_faltantes = 0
+
+for producto, stock, minimo in zip(productos, stocks, minimos):
+    if stock < minimo:
+        reponer.append(producto)
+        uniudades_faltantes += minimo - stock
+resultado = {
+    "reponer": reponer,
+    "unidades faltantes": uniudades_faltantes
+}
+print(resultado)
+
+
+
+
+
 ## Ejercicio #0022 (Modulo 001_fundamentos_y_logica - #022)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** ranking, ordenamiento, empates
@@ -288,6 +345,15 @@ else:
 #- **Reglas:** Ordena por puntos descendente y nombre ascendente.
 #- **Pista opcional:** Usa pares nombre-punto.
 
+
+nombres = ["Ana", "Luis", "Eva"]; puntos = [5, 9, 6]
+pares = list(sorted(zip(nombres, puntos)))
+pares_ordenados=sorted(pares, key=lambda x: x[1], reverse=True)
+print(pares_ordenados)
+
+
+
+
 ## Ejercicio #0023 (Modulo 001_fundamentos_y_logica - #023)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** simulaciones, listas, limites
@@ -297,6 +363,25 @@ else:
 #- **Salida esperada:** `[7, 11, 7, 12]`
 #- **Reglas:** Despues de cada cambio guarda el nivel ajustado.
 #- **Pista opcional:** Aplica limites luego de sumar.
+
+nivel = 6
+cambios = [1, 4, -4, 5]
+
+acumulado = []
+actual = nivel
+
+for cambio in cambios:
+    actual += cambio
+    if actual < 0:
+        actual = 0
+    if actual > 100:
+        actual = 100
+    acumulado.append(actual)
+print(acumulado)
+
+    
+
+
 
 ## Ejercicio #0024 (Modulo 001_fundamentos_y_logica - #024)
 #- **Nivel de dificultad:** Nivel 2 - Basico
