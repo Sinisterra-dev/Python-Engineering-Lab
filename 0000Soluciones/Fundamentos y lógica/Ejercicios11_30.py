@@ -468,8 +468,7 @@ print(resultado)
 
 
 
-solicitados = [6, 7, 8, 9];
-disponibles = [7, 9, 11]
+
 ## Ejercicio #0027 (Modulo 001_fundamentos_y_logica - #027)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** ventanas, bucles, listas
@@ -480,6 +479,8 @@ disponibles = [7, 9, 11]
 #- **Reglas:** Genera ventanas completas solamente.
 #- **Pista opcional:** Recorre hasta len(valores)-2.
 
+valores = [10, 19, 4, 0, 8]
+
 ## Ejercicio #0028 (Modulo 001_fundamentos_y_logica - #028)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** agregaciones, multiples listas
@@ -489,6 +490,22 @@ disponibles = [7, 9, 11]
 #- **Salida esperada:** `["A", "B"]`
 #- **Reglas:** Acumula por categoria y filtra al final.
 #- **Pista opcional:** Puedes usar listas paralelas.
+
+categorias = ["A", "B", "A", "C"]; cantidades = [11, 21, 5, 1]; umbral = 8
+
+totales_por_categoria = {}
+for categoria, cantidad in zip(categorias, cantidades):
+    if categoria in totales_por_categoria:
+        totales_por_categoria[categoria] += cantidad
+    else:
+        totales_por_categoria[categoria] = cantidad
+supera_umbral = []
+
+for categoria, total in totales_por_categoria.items():
+    if total > umbral:
+        supera_umbral.append(categoria)
+print(supera_umbral)
+
 
 ## Ejercicio #0029 (Modulo 001_fundamentos_y_logica - #029)
 #- **Nivel de dificultad:** Nivel 2 - Basico
