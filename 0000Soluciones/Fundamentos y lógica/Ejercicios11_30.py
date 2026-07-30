@@ -418,6 +418,7 @@ else:
 resultados = {"aprobados": aprobados, "rechazados": rechazados, "promedio_aprobados": promedio_aprobados}
 print(resultados)
 
+
 ## Ejercicio #0025 (Modulo 001_fundamentos_y_logica - #025)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** listas, rachas, contadores
@@ -427,6 +428,21 @@ print(resultados)
 #- **Salida esperada:** `2`
 #- **Reglas:** Una racha se corta cuando el estado no es alerta.
 #- **Pista opcional:** Compara racha actual contra mejor.
+
+estados = ["alerta", "ok", "alerta", "alerta", "ok", "alerta"]
+
+mejor_racha = 0
+racha_actual = 0
+
+for estado in estados:
+    if estado == "alerta":
+        racha_actual +=1
+    if racha_actual > mejor_racha:
+        mejor_racha = racha_actual
+    if estado == "ok":
+        racha_actual =0
+    
+print(mejor_racha)
 
 ## Ejercicio #0026 (Modulo 001_fundamentos_y_logica - #026)
 #- **Nivel de dificultad:** Nivel 2 - Basico
@@ -438,6 +454,8 @@ print(resultados)
 #- **Reglas:** No dupliques resultados.
 #- **Pista opcional:** Revisa cada solicitado.
 
+solicitados = [6, 7, 8, 9];
+disponibles = [7, 9, 11]
 ## Ejercicio #0027 (Modulo 001_fundamentos_y_logica - #027)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** ventanas, bucles, listas
