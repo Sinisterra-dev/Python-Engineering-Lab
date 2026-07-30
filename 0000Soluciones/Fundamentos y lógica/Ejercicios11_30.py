@@ -444,6 +444,7 @@ for estado in estados:
     
 print(mejor_racha)
 
+
 ## Ejercicio #0026 (Modulo 001_fundamentos_y_logica - #026)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** busqueda, listas, clasificacion
@@ -453,6 +454,19 @@ print(mejor_racha)
 #- **Salida esperada:** `{"atendidos": [7, 9], "faltantes": [6, 8]}`
 #- **Reglas:** No dupliques resultados.
 #- **Pista opcional:** Revisa cada solicitado.
+solicitados = [6, 7, 8, 9]; disponibles = [7, 9, 11]
+atendidos = []
+faltantes = []
+
+for solicitado in solicitados:
+    if solicitado in disponibles:
+        atendidos.append(solicitado)
+    if solicitado not in disponibles:
+        faltantes.append(solicitado)
+resultado = {"atendidos": atendidos, "faltantes": faltantes}
+print(resultado)
+
+
 
 solicitados = [6, 7, 8, 9];
 disponibles = [7, 9, 11]
