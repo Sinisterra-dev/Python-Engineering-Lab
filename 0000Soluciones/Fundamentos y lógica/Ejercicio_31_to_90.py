@@ -33,6 +33,31 @@ print (acumulado)
 - **Reglas:** Si no hay aprobados, promedio_aprobados es 0.
 - **Pista opcional:** Filtra antes de promediar."""
 
+valores = [15, 29, 9, 0]; minimo = 6
+aprobados = 0
+rechazados = 0
+lista_aprobados = []
+
+for valor in valores:
+    if valor >= minimo:
+        lista_aprobados.append(valor)
+    
+    if valor >= minimo:
+        aprobados += 1
+    else :
+        rechazados += 1
+if aprobados > 0:
+    promedio_aprobados = sum(lista_aprobados)/aprobados
+else:
+    promedio_aprobados = 0
+    
+resultado = {"aprobados": aprobados, "rechazados": rechazados, "promedio_aprobados": promedio_aprobados}
+
+print(resultado)
+    
+
+
+
 """## Ejercicio #0033 (Modulo 001_fundamentos_y_logica - #033)
 - **Nivel de dificultad:** Nivel 2 - Basico
 - **Conceptos involucrados:** listas, rachas, contadores
