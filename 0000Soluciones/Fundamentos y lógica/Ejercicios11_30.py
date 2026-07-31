@@ -517,6 +517,19 @@ print(supera_umbral)
 #- **Reglas:** Compara cada valor con su limite y suma solo deficits positivos.
 #- **Pista opcional:** El deficit es limite - valor.
 
+nombres = ["A", "B", "C"]; valores = [12, 23, 6]; limites = [9, 11, 6]
+criticos = []
+deficit_total = 0
+for nombre, valor, limite in zip(nombres, valores, limites):
+    if limite > valor:
+        criticos.append(nombre)
+    if limite - valor > 0:
+        deficit_total += limite - valor
+resultado = {"criticos": criticos , "deficit_total": deficit_total}
+print(resultado)
+    
+
+
 ## Ejercicio #0030 (Modulo 001_fundamentos_y_logica - #030)
 #- **Nivel de dificultad:** Nivel 2 - Basico
 #- **Conceptos involucrados:** ranking, ordenamiento, empates
