@@ -539,3 +539,9 @@ print(resultado)
 #- **Salida esperada:** `["Luis", "Ana", "Eva"]`
 #- **Reglas:** Ordena por puntos descendente y nombre ascendente.
 #- **Pista opcional:** Usa pares nombre-punto.
+
+nombres = ["Ana", "Luis", "Eva"]; puntos = [13, 25, 7]
+pares = list(zip(nombres, puntos))
+pares_ordenados=sorted(pares, key=lambda pareja: pareja[1], reverse=True)
+print(pares_ordenados)
+
