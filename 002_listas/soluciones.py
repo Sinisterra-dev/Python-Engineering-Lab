@@ -70,6 +70,13 @@ print(bajo_cero)
 #
 # ============================================================
 
+valores = [5, 2, 8, 9]
+primer_valor = valores[0]
+ultimo_valor = valores[-1]
+valores[0] = ultimo_valor
+valores[-1] = primer_valor
+print(valores)
+
 
 # ============================================================
 # EJERCICIO #0004
