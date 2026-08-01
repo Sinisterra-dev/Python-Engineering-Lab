@@ -93,8 +93,13 @@ print(valores)
 # 3
 #
 # ============================================================
-
-
+lista = [3, 5, 3, 2, 3]
+objetivo = 3
+contador = 0
+for valor in lista:
+    if valor == objetivo:
+        contador +=1
+print(contador)
 # ============================================================
 # EJERCICIO #0005
 # Nivel: Nivel 1 - Inicial
