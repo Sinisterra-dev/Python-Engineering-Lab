@@ -20,8 +20,16 @@
 # {"validas": [20, 22, 19], "descartadas": [1, 3]}
 #
 # ============================================================
+lista_entrada = [20, None, 22, None, 19]
+validas = []
+descartadas = []
 
-
+for indice, entrada in enumerate(lista_entrada):
+    if entrada is None:
+        descartadas.append(indice)
+    if isinstance(entrada, int):
+        validas.append(entrada)
+print( {"validas": validas, "descartadas": descartadas})
 # ============================================================
 # EJERCICIO #0002
 # Nivel: Nivel 1 - Inicial
