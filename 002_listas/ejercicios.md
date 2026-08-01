@@ -10,6 +10,8 @@ Total del modulo: **40 ejercicios**.
 **Entrada:** `[20, None, 22, None, 19]`
 **Salida:** `{"validas":[20,22,19],"descartadas":[1,3]}`
 
+
+
 ## Ejercicio #0002
 
 **Nivel:** Nivel 1 - Inicial

@@ -51,7 +51,7 @@ if aprobados > 0:
 else:
     promedio_aprobados = 0
     
-resultado = {"aprobados": aprobados, "rechazados": rechazados, "promedio_aprobados": promedio_aprobados}
+resultado = {"aprobados": aprobados, "rechazados": rechazados, "promedio_aprobados": round(promedio_aprobados, 2)}
 
 print(resultado)
     
