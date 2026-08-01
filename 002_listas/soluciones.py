@@ -115,7 +115,15 @@ print(contador)
 # [10, 0, 20, 0]
 #
 # ============================================================
-
+lista = [10, -5, 20, -3]
+salida = []
+for valor in lista:
+    if valor< 0:
+        valor = 0
+        salida.append(valor)
+    else:
+        salida.append(valor)
+print(salida)
 
 # ============================================================
 # EJERCICIO #0006
@@ -132,6 +140,10 @@ print(contador)
 # ["estrella", "luna", "sol"]
 #
 # ============================================================
+lista = ["sol", "luna", "estrella"]
+lista_inversa = reversed(lista)
+lista_lista = list(lista_inversa)
+print(lista_lista)
 
 
 # ============================================================
