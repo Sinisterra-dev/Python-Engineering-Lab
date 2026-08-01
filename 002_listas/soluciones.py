@@ -45,6 +45,13 @@ print( {"validas": validas, "descartadas": descartadas})
 # [-3, -1]
 #
 # ============================================================
+temperaturas = [12, -3, 5, -1, 0]
+bajo_cero = []
+
+for temperatura in temperaturas:
+    if temperatura < 0:
+        bajo_cero.append(temperatura)
+print(bajo_cero)
 
 
 # ============================================================
