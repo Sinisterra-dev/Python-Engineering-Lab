@@ -228,6 +228,13 @@ print(resultado)
 #
 # ============================================================
 
+lista = [1, 2, 1, 3, 2]
+sin_duplicar = []
+
+for valor in lista:
+    if valor not in sin_duplicar:
+        sin_duplicar.append(valor)
+print(sin_duplicar)
 
 # ============================================================
 # EJERCICIO #0010
