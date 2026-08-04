@@ -327,6 +327,18 @@ print(polindormo)
 #
 # ============================================================
 
+lista1 = [1, 2, 3]
+lista2 = [2, 3, 4]
+elementos_comunes = []
+
+# Recorremos cada elemento de la primera lista
+for valor in lista1:
+    # Verificamos si está en la segunda lista Y si aún no lo hemos agregado
+    if valor in lista2 and valor not in elementos_comunes:
+        elementos_comunes.append(valor)
+
+print(elementos_comunes)
+# Salida esperada: [2, 3]
 
 # ============================================================
 # EJERCICIO #0014
