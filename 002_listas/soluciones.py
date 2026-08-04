@@ -299,6 +299,16 @@ print(ordenada)
 # True
 #
 # ============================================================
+lista = [1, 2, 3, 2, 1]
+lista_revertida = reversed(lista)
+lista_realmente_invertida = list(lista_revertida)
+print(lista_realmente_invertida)
+
+polindormo = False
+if lista == lista_realmente_invertida:
+    polindormo = True
+print(polindormo)
+
 
 
 # ============================================================
