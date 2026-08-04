@@ -268,6 +268,20 @@ print(sin_duplicar)
 # False
 #
 # ============================================================
+# Entrada del ejercicio
+lista = [1, 3, 5, 4]
+
+# Variable para guardar el resultado final
+ordenada = True
+
+# Comparamos cada elemento con el siguiente usando un bucle
+for i in range(len(lista) - 1):
+    if lista[i] > lista[i + 1]:
+        ordenada = False
+        break  # Rompemos el bucle porque ya sabemos que es False
+
+# Salida esperada
+print(ordenada)
 
 
 # ============================================================
