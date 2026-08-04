@@ -145,6 +145,15 @@ lista_inversa = reversed(lista)
 lista_lista = list(lista_inversa)
 print(lista_lista)
 
+##Slicing
+lista = ["sol", "luna", "estrella"]
+lista_inversa = lista[::-1]
+print("Inversa:", lista_inversa)
+print("Original:", lista)
+
+# Salida:
+# Inversa: ['estrella', 'luna', 'sol']
+# Original: ['sol', 'luna', 'estrella']
 
 # ============================================================
 # EJERCICIO #0007
@@ -161,7 +170,16 @@ print(lista_lista)
 # 8.0
 #
 # ============================================================
-
+lista = [4, 7, 8, 2, 9]
+sumadetodas = 0
+aprobados = 0
+for valor in lista:
+    if valor > 5:
+        sumadetodas += valor
+        aprobados += 1
+print(sumadetodas)
+promedio = sumadetodas / aprobados
+print(promedio)
 
 # ============================================================
 # EJERCICIO #0008
