@@ -196,6 +196,20 @@ print(promedio)
 # 90
 #
 # ============================================================
+lista =  [10, 20, 30, 40, 50]
+pares = []
+
+
+for i,valor in enumerate(lista):
+    if i % 2 == 0:
+        pares.append(valor)
+resultado = sum(pares)
+print(pares)
+print(resultado)
+
+
+
+
 
 
 # ============================================================
