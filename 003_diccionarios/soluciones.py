@@ -129,7 +129,14 @@ texto = "banana"
 # {"b": 1, "a": 3, "n": 2}
 #
 # ============================================================
+frecuencia = {}
 
+for letra in texto:
+    if letra not in frecuencia:
+        frecuencia[letra] =1
+    else:
+        frecuencia[letra] += 1
+print(frecuencia)
 
 # ============================================================
 # EJERCICIO #0007
