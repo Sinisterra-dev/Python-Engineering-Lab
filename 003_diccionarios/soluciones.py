@@ -86,7 +86,11 @@ stock = {"pan": 8, "leche": 3, "arroz": 10, "cafe": 2}
 # ["leche", "cafe"]
 #
 # ============================================================
-
+stock_menor = []
+for clave,valor in stock.items():
+    if valor < 5:
+        stock_menor.append(clave)
+print(stock_menor)
 
 # ============================================================
 # EJERCICIO #0005
