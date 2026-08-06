@@ -158,6 +158,15 @@ ventas = [
 # {"pan": 5, "leche": 4}
 #
 # ============================================================
+venta_acumulada = {}
+for venta in ventas:
+    producto = venta["producto"]
+    cantidad = venta["cantidad"]
+    if producto not in venta_acumulada:
+        venta_acumulada[producto] = cantidad
+    else:
+        venta_acumulada[producto] += cantidad
+print(venta_acumulada)
 
 
 # ============================================================
