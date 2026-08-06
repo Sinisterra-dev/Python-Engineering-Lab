@@ -28,7 +28,8 @@ print("telefono" in persona)
 
 # 6. .get()
 print(persona.get("telefono"))
-print(persona.get("telefono", "No registrado"))
+print(persona.get("telefono", "No registrado")) #No modifica el diccionario
+print(persona)
 
 # 7. RECORRER CLAVES
 for clave in persona:

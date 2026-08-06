@@ -27,7 +27,9 @@ producto = {"nombre": "Laptop", "precio": 2500}
 # {"nombre": "Laptop", "precio": 2300, "stock": 5}
 #
 # ============================================================
-
+producto = {"nombre": "Laptop", "precio": 2500}
+producto["stock"] = 5
+print(producto)
 
 # ============================================================
 # EJERCICIO #0002
