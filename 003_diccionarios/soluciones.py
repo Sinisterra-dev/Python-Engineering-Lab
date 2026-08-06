@@ -67,7 +67,8 @@ precios = {"pan": 3000, "leche": 4500, "arroz": 6000}
 # arroz -> 6000
 #
 # ============================================================
-
+for producto, precio in precios.items():
+    print(producto, "--> ", precio)
 
 # ============================================================
 # EJERCICIO #0004
