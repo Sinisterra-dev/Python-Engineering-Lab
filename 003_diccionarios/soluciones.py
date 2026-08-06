@@ -107,8 +107,12 @@ ventas = {"lunes": 20, "martes": 15, "miercoles": 30}
 # 65
 #
 # ============================================================
-
-
+total = 0
+for dia, cantidad in ventas.items():
+    total += cantidad
+print(total)
+con_sum = sum(ventas.values())
+print(con_sum)
 # ============================================================
 # EJERCICIO #0006
 # Nivel: Nivel 1 - Inicial
