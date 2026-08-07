@@ -241,6 +241,17 @@ precios = {"pan": 100, "leche": 200, "cafe": 500}
 # ============================================================
 
 
+precios = {"pan": 100, "leche": 200, "cafe": 500}
+precios_con_descuento = {}
+
+for producto, precio in precios.items():
+    precios_con_descuento[producto]  = precio * 0.9
+print(precios_con_descuento)
+    
+
+
+
+
 # ============================================================
 # EJERCICIO #0011
 # Nivel: Nivel 2 - Básico
