@@ -268,8 +268,10 @@ colores = {"rojo": "#F00", "verde": "#0F0", "azul": "#00F"}
 # {"#F00": "rojo", "#0F0": "verde", "#00F": "azul"}
 #
 # ============================================================
-
-
+color_invertido = {}
+for nombre, valor in colores.items():
+    color_invertido[valor] = nombre
+print(color_invertido)
 # ============================================================
 # EJERCICIO #0012
 # Nivel: Nivel 2 - Básico
