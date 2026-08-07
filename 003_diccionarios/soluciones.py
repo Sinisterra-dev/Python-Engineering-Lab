@@ -185,6 +185,14 @@ notas = {"Ana": 8, "Luis": 4, "Eva": 6, "Juan": 3}
 #
 # ============================================================
 
+notas = {"Ana": 8, "Luis": 4, "Eva": 6, "Juan": 3}
+notas_permitidas = []
+for nombre, nota in notas.items():
+    if nota >= 6: 
+        notas_permitidas.append(nombre)
+print(notas_permitidas)
+
+
 
 # ============================================================
 # EJERCICIO #0009
