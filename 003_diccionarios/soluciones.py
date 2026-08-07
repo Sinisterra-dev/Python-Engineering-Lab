@@ -213,6 +213,15 @@ precios = {"pan": 3000, "leche": 4500, "cafe": 12000}
 #
 # ============================================================
 
+precios = {"pan": 3000, "leche": 4500, "cafe": 12000}
+max_precio = 0
+producto_caro = None
+for producto, precio in precios.items():
+    if precio  > max_precio:
+        max_precio = precio
+        producto_caro = producto
+print(producto_caro)
+    
 
 # ============================================================
 # EJERCICIO #0010
