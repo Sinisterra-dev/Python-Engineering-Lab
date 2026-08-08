@@ -350,6 +350,13 @@ notas = {"Ana": 8, "Luis": 5, "Eva": 9}
 #
 # ============================================================
 
+notas = {"Ana": 8, "Luis": 5, "Eva": 9}
+
+valores_notas = notas.values()
+promedio = sum(valores_notas) / len(notas)
+print(promedio)
+# 7.333333333333333
+
 
 # ============================================================
 # EJERCICIO #0015
