@@ -290,6 +290,19 @@ palabras = ["sol", "luna", "mar", "cielo", "rio"]
 # Mantén el orden original.
 #
 # ============================================================
+palabras_agrupadas = {}
+
+for palabra in palabras:
+    longitud = len(palabra)
+
+    if longitud not in palabras_agrupadas:
+        palabras_agrupadas[longitud] = []
+    palabras_agrupadas[longitud].append(palabra)
+
+print("Resultado real:", palabras_agrupadas)
+
+
+        
 
 
 # ============================================================
