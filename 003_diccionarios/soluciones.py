@@ -374,7 +374,21 @@ notas = {"Ana": 8, "Luis": 5, "Eva": 6, "Juan": 3}
 # {"aprobados": ["Ana", "Eva"], "reprobados": ["Luis", "Juan"]}
 #
 # ============================================================
+# Entrada
+notas = {"Ana": 8, "Luis": 5, "Eva": 6, "Juan": 3}
 
+notas_finales = {"aprobados": [], "reprobados": []}
+
+for nombre, nota in notas.items():
+    if nota >= 6:
+        # Añade a la lista de aprobados directamente
+        notas_finales["aprobados"].append(nombre)
+    else:
+        # Añade a la lista de reprobados directamente
+        notas_finales["reprobados"].append(nombre)
+
+print(notas_finales)
+# Salida: {"aprobados": ["Ana", "Eva"], "reprobados": ["Luis", "Juan"]}
 
 # ============================================================
 # EJERCICIO #0016
