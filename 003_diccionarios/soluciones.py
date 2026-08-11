@@ -438,6 +438,9 @@ for nombre, contra in usuarios.items():
         False
 print(valido)
 
+valido = usuarios.get(usuario) == contrasena
+
+print(valido)
 # ============================================================
 # EJERCICIO #0018
 # Nivel: Nivel 2 - Básico
@@ -454,6 +457,14 @@ ciudades = ["Palmira", "Cali", "Palmira", "Buga", "Cali", "Palmira"]
 #
 # ============================================================
 
+conteo = {}
+
+for ciudad in ciudades:
+    if ciudad not in conteo:
+        conteo[ciudad] = 1
+    else:
+        conteo[ciudad] +=1
+print(conteo)
 
 # ============================================================
 # EJERCICIO #0019
