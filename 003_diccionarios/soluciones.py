@@ -487,6 +487,26 @@ ventas = [
 # {"producto": "pan", "cantidad": 12}
 #
 # ============================================================
+totales = {}
+
+for venta in ventas:
+    producto = venta["producto"]
+    cantidad = venta["cantidad"]
+
+    if producto in totales:
+        totales[producto] += cantidad
+    else:
+        totales[producto] = cantidad
+
+producto_top = max(totales, key=totales.get)
+cantidad_top = totales[producto_top]
+
+salida = {
+    "producto": producto_top,
+    "cantidad": cantidad_top
+}
+
+print(salida)
 
 
 # ============================================================
