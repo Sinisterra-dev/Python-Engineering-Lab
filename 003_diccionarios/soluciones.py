@@ -406,8 +406,12 @@ datos = {"id": 10, "nombre": "Ana", "telefono": None, "edad": 28}
 # {"id": 10, "nombre": "Ana", "edad": 28}
 #
 # ============================================================
+datos_limpios = {}
+for nombre, dato in datos.items():
+    if dato is not None:
+        datos_limpios[nombre] = dato
 
-
+print(datos_limpios)
 # ============================================================
 # EJERCICIO #0017
 # Nivel: Nivel 2 - Básico
