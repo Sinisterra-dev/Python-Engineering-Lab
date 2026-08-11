@@ -430,7 +430,13 @@ contrasena = "1234"
 # True
 #
 # ============================================================
-
+válido = False
+for nombre, contra in usuarios.items():
+    if nombre == usuario and contra == contrasena:
+        valido = True
+    else:
+        False
+print(valido)
 
 # ============================================================
 # EJERCICIO #0018
