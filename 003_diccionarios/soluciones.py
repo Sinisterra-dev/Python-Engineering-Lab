@@ -533,6 +533,20 @@ empleados = [
 #
 # ============================================================
 
+resultado = {}
+
+for empleado in empleados:
+    depto = empleado["departamento"]
+    nombre = empleado["nombre"]
+    
+    # Si el departamento no está en el diccionario, lo creamos con una lista vacía
+    if depto not in resultado:
+        resultado[depto] = []
+    
+    # Agregamos el nombre a la lista del departamento correspondiente
+    resultado[depto].append(nombre)
+
+print(resultado)
 
 # ============================================================
 # EJERCICIO #0021
