@@ -641,6 +641,13 @@ precios = {"reloj": 250, "auriculares": 80, "telefono": 600}
 # [("auriculares", 80), ("reloj", 250), ("telefono", 600)]
 #
 # ============================================================
+precios = {"reloj": 250, "auriculares": 80, "telefono": 600}
+
+# Usamos sorted() sobre los ítems del diccionario y ordenamos por el valor (elemento 1 de la tupla)
+resultado = sorted(precios.items(), key=lambda x: x[1])
+
+print(resultado)
+# Salida esperada: [("auriculares", 80), ("reloj", 250), ("telefono", 600)]
 
 
 # ============================================================
