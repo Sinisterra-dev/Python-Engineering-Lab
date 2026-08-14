@@ -30,7 +30,12 @@ hoy = ["ana", "eva", "zoe"]
 # Pista:
 # Convierte las listas a sets y usa diferencia.
 # ============================================================
+set_ayer = set(ayer)
+set_hoy = set(hoy)
 
+salida = set_hoy - set_ayer
+resultado = sorted(salida)
+print(resultado)
 
 # ============================================================
 # EJERCICIO #0002
