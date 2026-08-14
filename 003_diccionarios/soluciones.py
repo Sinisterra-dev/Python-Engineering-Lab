@@ -603,6 +603,26 @@ registros = [
 # {"A": 66.67, "B": 100.0}
 #
 # ============================================================
+salida = {}
+for registro in registros:
+    curso = registro["curso"]
+    asistencia = registro["presente"]
+
+    if curso not in salida:
+        
+        salida[curso] = {"total": 0, "asistencias": 0}
+    
+    salida[curso]["total"] += 1
+    if asistencia:
+        salida[curso]["asistencias"] += 1
+
+# Calcular los porcentajes finales
+resultado_final = {}
+for curso, datos in salida.items():
+    porcentaje = (datos["asistencias"] / datos["total"]) * 100
+    resultado_final[curso] = round(porcentaje, 2)
+
+print(resultado_final)
 
 
 # ============================================================
