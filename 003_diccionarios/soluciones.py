@@ -667,6 +667,20 @@ stock = {"pan": 7, "leche": 10, "cafe": 2}
 # {"pan": 3, "cafe": 3}
 #
 # ============================================================
+salida = {}
+
+# Recorremos cada producto y su cantidad mínima requerida
+for producto, minimo_requerido in minimos.items():
+    # Acceso directo al stock usando la clave
+    actual = stock[producto]
+    
+    # Si el stock actual es menor al mínimo, calculamos cuánto falta
+    if actual < minimo_requerido:
+        salida[producto] = minimo_requerido - actual
+
+print(salida)
+# Salida esperada: {"pan": 3, "cafe": 3}
+
 
 
 # ============================================================
