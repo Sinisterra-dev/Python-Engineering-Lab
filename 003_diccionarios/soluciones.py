@@ -569,6 +569,17 @@ productos = [
 # {"fruta": 30, "verdura": 20}
 #
 # ============================================================
+salida = {}
+
+for producto in productos:
+    categoria = producto["categoria"]
+    precio = producto["precio"]
+
+    if categoria not in salida:
+        salida[categoria] = 0
+
+    salida[categoria] += precio
+print(salida)
 
 
 # ============================================================
