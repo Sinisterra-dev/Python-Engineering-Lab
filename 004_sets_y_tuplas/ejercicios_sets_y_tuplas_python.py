@@ -37,6 +37,7 @@ salida = set_hoy - set_ayer
 resultado = sorted(salida)
 print(resultado)
 
+
 # ============================================================
 # EJERCICIO #0002
 # Nivel: Nivel 1 - Inicial
@@ -54,7 +55,8 @@ lista = [1, 2, 2, 3, 4, 4]
 # Regla:
 # El resultado debe ser realmente un objeto set.
 # ============================================================
-
+unicos = set(lista)
+print(unicos)
 
 # ============================================================
 # EJERCICIO #0003
