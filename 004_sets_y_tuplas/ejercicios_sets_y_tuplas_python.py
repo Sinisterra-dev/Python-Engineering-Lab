@@ -77,7 +77,8 @@ b = ["bebida", "promo", "frio"]
 # Pista:
 # Usa la intersección de sets y luego sorted().
 # ============================================================
-
+salida = sorted(set(a) & set(b))
+print(salida)
 
 # ============================================================
 # EJERCICIO #0004
@@ -100,7 +101,8 @@ grupo_b = {"editor", "viewer"}
 # Pista:
 # Puedes usar ^ o symmetric_difference().
 # ============================================================
-
+salida = grupo_a ^ grupo_b
+print(salida)
 
 # ============================================================
 # EJERCICIO #0005
