@@ -1053,3 +1053,26 @@ cantidad_vendida = 17
 # OJO:
 # El resultado correcto de este caso es 43.0.
 # ============================================================
+
+#Encontrar errores
+# salida esperada {"pan": 12, "leche": 3, "cafe": 4}
+
+ventas = [
+    {"producto": "pan", "cantidad": 5},
+    {"producto": "leche", "cantidad": 3},
+    {"producto": "pan", "cantidad": 7},
+    {"producto": "cafe", "cantidad": 4}
+]
+
+totales = {}
+
+for venta in ventas:
+    producto = venta["producto"]
+    cantidad = venta["cantidad"]
+
+    if producto not in totales:
+        totales[producto] = cantidad
+    else:
+        totales[producto] += cantidad
+
+print(totales)
