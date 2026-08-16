@@ -124,6 +124,9 @@ caja = {"martillo", "destornillador", "pinza"}
 # issubset() o <=.
 # ============================================================
 
+print(requeridas.issubset(caja))
+print(requeridas <= caja)
+
 
 # ============================================================
 # EJERCICIO #0006
