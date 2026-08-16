@@ -233,7 +233,8 @@ permitidos = {"0", "1"}
 # El set de caracteres del texto debe ser subconjunto del set
 # de caracteres permitidos.
 # ============================================================
-
+salida = set(texto).issubset(permitidos)
+print(salida)   
 
 # ============================================================
 # EJERCICIO #0011
