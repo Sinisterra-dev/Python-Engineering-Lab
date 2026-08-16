@@ -211,7 +211,8 @@ cat2 = [201, 202]
 # Pista:
 # isdisjoint() devuelve True cuando no hay elementos en común.
 # ============================================================
-
+salida = set(cat1).isdisjoint(set(cat2))
+print(salida)
 
 # ============================================================
 # EJERCICIO #0010
