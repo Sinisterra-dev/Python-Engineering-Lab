@@ -190,7 +190,8 @@ bloqueados = {"luis", "pedro"}
 # Pista:
 # El operador - representa diferencia.
 # ============================================================
-
+aut = autorizados - bloqueados
+print(aut)
 
 # ============================================================
 # EJERCICIO #0009
