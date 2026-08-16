@@ -147,7 +147,8 @@ dep_b = {"cocina", "jardin"}
 # Regla:
 # Devuelve un set.
 # ============================================================
-
+departamenos = dep_a | dep_b
+print(departamenos)
 
 # ============================================================
 # EJERCICIO #0007
