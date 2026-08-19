@@ -326,7 +326,8 @@ y = [10, 20, 30]
 # zip() ya lo has trabajado bastante; aquí el objetivo nuevo
 # es observar que cada par generado es una tupla.
 # ============================================================
-
+salida = list(zip(x, y))
+print(salida)   
 
 # ============================================================
 # EJERCICIO #0015
