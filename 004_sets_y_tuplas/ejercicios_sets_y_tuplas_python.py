@@ -489,7 +489,8 @@ miercoles = {"luis", "pedro"}
 # Pista:
 # Intersecta los tres sets y después usa sorted().
 # ============================================================
-
+salida = sorted(lunes & martes & miercoles)
+print(salida)
 
 # ============================================================
 # EJERCICIO #0022
