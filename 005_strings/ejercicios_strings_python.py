@@ -43,6 +43,20 @@ nombres = [" ana ", "LUIS", " marta"]
 # Pista:
 # strip() y title()
 # ============================================================
+nombres = ["  ana ", "LUIS", " marta"]
+
+# 1. Crear una lista vacía para guardar los resultados
+nombres_normalizados = []
+
+# 2. Recorrer la lista original elemento por elemento
+for nombre in nombres:
+    # 3. Limpiar espacios y aplicar formato de título
+    nombre_limpio = nombre.strip().title()
+    # 4. Agregar el resultado a la nueva lista
+    nombres_normalizados.append(nombre_limpio)
+
+print(nombres_normalizados)
+# Salida: ['Ana', 'Luis', 'Marta']
 
 
 # ============================================================
