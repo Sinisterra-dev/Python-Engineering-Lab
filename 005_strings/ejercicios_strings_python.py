@@ -22,7 +22,8 @@ nombre = "Alexander"
 # "alexander"
 # "ALEXANDER"
 # ============================================================
-
+salida = (nombre.upper()) + (nombre.lower())
+print(salida)
 
 # ============================================================
 # EJERCICIO #0002
